@@ -1,0 +1,69 @@
+# Node / renderer dependencies and output
+node_modules/
+dist/
+.vite/
+.eslintcache
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# .NET build output and tooling
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+[Tt]est[Rr]esults/
+coverage/
+.coverage
+*.coverage
+*.coveragexml
+*.user
+*.suo
+*.userprefs
+*.rsuser
+*.ncrunch*
+
+# Generated application artifacts
+/build/
+/artifacts/
+src/windows/FlowScreen/Assets/renderer/*
+!src/windows/FlowScreen/Assets/renderer/.gitkeep
+*.scr
+*.msi
+*.msix
+
+# IDEs and editors
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Runtime, caches, and temporary files
+logs/
+*.log
+*.cache
+*.tmp
+*.temp
+*.bak
+*.orig
+*.pid
+.cache/
+cache/
+tmp/
+temp/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

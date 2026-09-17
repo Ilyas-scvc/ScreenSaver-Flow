@@ -1,0 +1,30 @@
+<Window x:Class="FlowScreen.Views.SaverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FlowScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="False"
+        ShowInTaskbar="False"
+        WindowStartupLocation="Manual"
+        Background="Black"
+        Foreground="#FFF4FA"
+        Cursor="None"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True">
+
+    <Grid x:Name="HostRoot" Background="Black">
+        <!-- Shown until the renderer paints its first frame, so the transition
+             from desktop to screensaver is a clean fade to black rather than a
+             flash of an empty window. -->
+        <TextBlock x:Name="Placeholder"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI Variable Display, Segoe UI"
+                   FontSize="15"
+                   FontWeight="SemiBold"
+                   Opacity="0.30"
+                   Foreground="#FF9DD2"
+                   Text="FlowScreen" />
+    </Grid>
+</Window>

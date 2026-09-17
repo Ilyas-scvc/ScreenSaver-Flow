@@ -1,0 +1,108 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+body {
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  color: #f6eef4;
+  /* The screensaver hides the real cursor host-side; this covers the browser. */
+  cursor: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+  background: #000;
+}
+
+.fs-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------- debug overlay --------------------------- */
+
+.fs-debug {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 12px 14px;
+  min-width: 230px;
+  border-radius: 10px;
+  background: rgba(10, 4, 10, 0.62);
+  border: 1px solid rgba(255, 140, 205, 0.18);
+  backdrop-filter: blur(10px);
+  font-family: "Cascadia Mono", "Consolas", ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
+.fs-debug-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.fs-debug-key {
+  color: rgba(255, 175, 220, 0.62);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  align-self: center;
+}
+
+.fs-debug-value {
+  color: #ffe7f5;
+  text-align: right;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ------------------------------- fatal error ----------------------------- */
+
+.fs-fatal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+  background: #050005;
+}
+
+.fs-fatal h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff8fc8;
+}
+
+.fs-fatal p {
+  max-width: 46ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(246, 238, 244, 0.72);
+}
